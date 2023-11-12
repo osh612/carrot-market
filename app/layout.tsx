@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ko">
-            <body className={inter.className}>{children}</body>
-        </html>
+            <body className={inter.className}>
+                <div className='w-full max-w-lg mx-auto'>
+                    {children}
+                </div>
+            </body>
+        </html >
     )
 }
